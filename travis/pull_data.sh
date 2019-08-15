@@ -3,9 +3,9 @@
 export WORKING_DIR=`pwd`
 echo "> Working dir: $WORKING_DIR"
 eval "$(ssh-agent -s)"
-
+ssh-add -K deployment_key.txt
 #ssh-add -l 
-ssh -vT deployment_key.txt aduartebdsol@github.com
+ssh -i deployment_key.txt aduartebdsol@github.com
 
 
 echo "> Getting data..."
