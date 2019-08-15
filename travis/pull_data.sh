@@ -5,7 +5,7 @@ echo "> Working dir: $WORKING_DIR"
 eval "$(ssh-agent -s)"
 
 #ssh-add -l 
-#ssh -vT aduartebdsol@github.com
+ssh -vT aduartebdsol@github.com
 
 
 echo "> Getting data..."
