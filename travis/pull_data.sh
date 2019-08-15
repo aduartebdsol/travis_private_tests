@@ -2,9 +2,9 @@
 
 export WORKING_DIR=`pwd`
 echo "> Working dir: $WORKING_DIR"
-#eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)"
 
-ssh-add -l 
+#ssh-add -l 
 #ssh -vT aduartebdsol@github.com
 
 
